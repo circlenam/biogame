@@ -250,6 +250,14 @@
   .card-yellow .play-btn { background: var(--neon-y); color: #000; }
   .card-yellow .icon-char { color: var(--neon-y); }
 
+  .card-red { border-color: rgba(255,77,109,0.35); }
+  .card-red:hover { border-color: var(--neon-r); box-shadow: 0 0 24px rgba(255,77,109,0.15); }
+  .card-red .card-glow { background: radial-gradient(ellipse at 50% 0%, rgba(255,77,109,0.08), transparent 70%); }
+  .card-red .card-header { background: linear-gradient(135deg, rgba(255,77,109,0.12), rgba(255,77,109,0.04)); border-bottom: 1px solid rgba(255,77,109,0.2); }
+  .card-red .tag { background: rgba(255,77,109,0.12); color: var(--neon-r); border: 1px solid rgba(255,77,109,0.25); }
+  .card-red .play-btn { background: var(--neon-r); color: #fff; }
+  .card-red .icon-char { color: var(--neon-r); }
+
   .card-header {
     padding: 1.2rem 1.2rem 1rem;
     display: flex;
@@ -542,7 +550,7 @@
     <div>
       <div class="stat-grid">
         <div class="stat-item">
-          <span class="stat-num">4</span>
+          <span class="stat-num">5</span>
           <span class="stat-lbl">GAMES LIVE</span>
         </div>
         <div class="stat-item">
@@ -669,12 +677,38 @@
       </div>
     </a>
 
+    <!-- Card 5: 랩칩 점도분석기 -->
+    <a class="game-card card-red" href="http://circlenam.github.io/viscometer/" target="_blank">
+      <div class="card-glow"></div>
+      <div class="pixel-corner pc-tl"></div><div class="pixel-corner pc-tr"></div>
+      <div class="pixel-corner pc-bl"></div><div class="pixel-corner pc-br"></div>
+      <div class="card-header">
+        <div class="icon-char">💧</div>
+        <div>
+          <div class="card-num">STAGE 05</div>
+          <div class="card-title-kr">랩칩 점도분석기</div>
+          <div class="card-title-en">LoC Viscometry Analyzer</div>
+        </div>
+      </div>
+      <div class="card-body">
+        <p class="card-desc">
+          Y형 마이크로채널 이미지로 레퍼런스·샘플 너비비를 측정해 점도를 정량합니다. 그룹별 평균·SD 통계 및 엑셀 저장 지원.
+        </p>
+        <div class="tags">
+          <span class="tag">마이크로플루이딕스</span>
+          <span class="tag">점도측정</span>
+          <span class="tag">이미지분석</span>
+        </div>
+        <span class="play-btn">▶ LAUNCH APP</span>
+      </div>
+    </a>
+
     <!-- Coming Soon 1 -->
     <div class="game-card card-coming">
       <div class="card-header">
         <div class="icon-char" style="opacity:0.3">⚗️</div>
         <div>
-          <div class="card-num">STAGE 05</div>
+          <div class="card-num">STAGE 06</div>
           <div class="card-title-kr" style="color:rgba(255,255,255,0.3)">SPR 바인딩 시뮬레이터</div>
           <div class="card-title-en" style="color:rgba(255,255,255,0.15)">SPR Binding Kinetics</div>
         </div>
@@ -690,7 +724,7 @@
       <div class="card-header">
         <div class="icon-char" style="opacity:0.3">🩸</div>
         <div>
-          <div class="card-num">STAGE 06</div>
+          <div class="card-num">STAGE 07</div>
           <div class="card-title-kr" style="color:rgba(255,255,255,0.3)">혈액점도 측정 게임</div>
           <div class="card-title-en" style="color:rgba(255,255,255,0.15)">Blood Viscosity Simulator</div>
         </div>
@@ -700,8 +734,6 @@
         <p class="card-desc" style="opacity:0.45">혈액의 비뉴턴 유동 특성과 헤마토크릿 관계 탐구</p>
       </div>
     </div>
-
-  </div>
 
   <!-- About section -->
   <div class="section-label">RESEARCH BASE</div>
